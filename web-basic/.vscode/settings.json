@@ -1,0 +1,67 @@
+{
+  // デフォルトのフォーマッタをPrettierに設定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 各言語別のフォーマッタ設定
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // エディタの基本設定
+  "workbench.colorTheme": "Espresso Soda", // カラーテーマを設定
+  "editor.tabSize": 2, // タブサイズを2に設定
+  "editor.insertSpaces": true, // タブの代わりにスペースを使用
+  "editor.detectIndentation": false, // ファイルごとの自動インデント検出を無効化
+  "files.eol": "\n", // 改行コードをLF（\n）に設
+  "workbench.editor.labelFormat": "medium", // タブに表示するファイル名のフォーマット
+  "workbench.tree.indent": 16, // エクスプローラーでのインデントのピクセル数
+  "workbench.tree.renderIndentGuides": "always", // エクスプローラーでインデントガイドを表示
+  "explorer.compactFolders": false, // 単一の子フォルダを親フォルダと統合して表示しない
+  "window.title": "${activeEditorMedium}${separator}${rootName}", // ウィンドウタイトルのフォーマット
+  "breadcrumbs.enabled": true, // ファイルパスのブレッドクラムを有効化
+  "breadcrumbs.filePath": "on", // ブレッドクラムにファイルパスを表示
+  // Prettier設定
+  "prettier.trailingComma": "all", // 末尾のカンマを常に付ける
+  "prettier.tabWidth": 2, // インデント幅を2に設定
+  "prettier.semi": false, // 文末のセミコロンを省略
+  "prettier.singleQuote": true, // シングルクォートを使用
+  "prettier.jsxSingleQuote": true, // JSX内でもシングルクォートを使用
+  "prettier.printWidth": 100, // 1行の最大文字数を100に設定
+  "prettier.useTabs": false, // タブの代わりにスペースを使用
+  "prettier.quoteProps": "as-needed", // プロパティの引用符は必要な場合のみ
+  "prettier.bracketSpacing": true, // オブジェクトリテラルの括弧内にスペースを入れる
+  "prettier.bracketSameLine": false, // 複数行の要素の閉じ括弧を新しい行に
+  "prettier.htmlWhitespaceSensitivity": "css", // HTML空白文字の扱いをCSSに準拠
+  "prettier.endOfLine": "lf", // 改行コードをLFに設定
+  "prettier.embeddedLanguageFormatting": "auto", // 埋め込み言語のフォーマットを自動で行う
+  // その他の編集設定
+  "editor.formatOnSave": true, // 保存時に自動フォーマット
+  "files.trimTrailingWhitespace": true, // 行末の空白を自動削除
+  "files.insertFinalNewline": true, // ファイル末尾に改行を挿入
+  "editor.renderWhitespace": "boundary", // 単語間の空白文字を表示
+  "editor.rulers": [
+    120
+  ], // 120文字目にルーラーを表示
+  // ワークスペース設定
+  "workbench.editor.enablePreview": false, // プレビューモードを無効化
+  "explorer.confirmDelete": false // ファイル削除時の確認を無効化
+}

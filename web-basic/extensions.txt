@@ -1,0 +1,10 @@
+brofox86.theme-espresso-soda-light
+brofox86.theme-espresso-soda-solarized
+donjayamanne.githistory
+esbenp.prettier-vscode
+github.copilot
+github.copilot-chat
+grapecity.gc-excelviewer
+ms-ceintl.vscode-language-pack-ja
+oderwat.indent-rainbow
+shardulm94.trailing-spaces

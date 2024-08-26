@@ -1,0 +1,26 @@
+{
+  // エディタの基本設定
+  "workbench.colorTheme": "Espresso Soda", // カラーテーマを設定
+  "editor.tabSize": 2, // タブサイズを2に設定
+  "editor.insertSpaces": true, // タブの代わりにスペースを使用
+  "editor.detectIndentation": false, // ファイルごとの自動インデント検出を無効化
+  "files.eol": "\n", // 改行コードをLF（\n）に設
+  "workbench.editor.labelFormat": "medium", // タブに表示するファイル名のフォーマット
+  "workbench.tree.indent": 16, // エクスプローラーでのインデントのピクセル数
+  "workbench.tree.renderIndentGuides": "always", // エクスプローラーでインデントガイドを表示
+  "explorer.compactFolders": false, // 単一の子フォルダを親フォルダと統合して表示しない
+  "window.title": "${activeEditorMedium}${separator}${rootName}", // ウィンドウタイトルのフォーマット
+  "breadcrumbs.enabled": true, // ファイルパスのブレッドクラムを有効化
+  "breadcrumbs.filePath": "on", // ブレッドクラムにファイルパスを表示
+  // その他の編集設定
+  "editor.formatOnSave": true, // 保存時に自動フォーマット
+  "files.trimTrailingWhitespace": true, // 行末の空白を自動削除
+  "files.insertFinalNewline": true, // ファイル末尾に改行を挿入
+  "editor.renderWhitespace": "boundary", // 単語間の空白文字を表示
+  "editor.rulers": [
+    120
+  ], // 120文字目にルーラーを表示
+  // ワークスペース設定
+  "workbench.editor.enablePreview": false, // プレビューモードを無効化
+  "explorer.confirmDelete": false // ファイル削除時の確認を無効化
+}
