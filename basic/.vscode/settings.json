@@ -1,6 +1,9 @@
 {
+  // ---------------
   // エディタの基本設定
-  "workbench.colorTheme": "Espresso Soda", // カラーテーマを設定
+  // ---------------
+  /* 基本 */
+  "workbench.colorTheme": "Visual Studio Light", // カラーテーマを設定
   "editor.tabSize": 2, // タブサイズを2に設定
   "editor.insertSpaces": true, // タブの代わりにスペースを使用
   "editor.detectIndentation": false, // ファイルごとの自動インデント検出を無効化
@@ -12,7 +15,7 @@
   "window.title": "${activeEditorMedium}${separator}${rootName}", // ウィンドウタイトルのフォーマット
   "breadcrumbs.enabled": true, // ファイルパスのブレッドクラムを有効化
   "breadcrumbs.filePath": "on", // ブレッドクラムにファイルパスを表示
-  // その他の編集設定
+  /* 編集設定 */
   "editor.formatOnSave": true, // 保存時に自動フォーマット
   "files.trimTrailingWhitespace": true, // 行末の空白を自動削除
   "files.insertFinalNewline": true, // ファイル末尾に改行を挿入
@@ -20,7 +23,35 @@
   "editor.rulers": [
     120
   ], // 120文字目にルーラーを表示
-  // ワークスペース設定
+  /* ワークスペース設定 */
   "workbench.editor.enablePreview": false, // プレビューモードを無効化
-  "explorer.confirmDelete": false // ファイル削除時の確認を無効化
+  "explorer.confirmDelete": false, // ファイル削除時の確認を無効化
+  "editor.fontSize": 16, // エディタのフォントサイズを16に設定
+  "editor.inlineSuggest.enabled": true, // インラインヒント（GitHub Copilotなど）を有効化
+  "workbench.startupEditor": "none", // VS Code起動時にウェルカムページを表示しない
+  "editor.unicodeHighlight.invisibleCharacters": false, // 不可視のUnicode文字のハイライトを無効化
+  "diffEditor.ignoreTrimWhitespace": true, // 差分表示時に行末の空白の違いを無視
+  "files.autoSave": "afterDelay", // ファイルを一定時間後に自動保存
+  /* git */
+  "git.autofetch": true, // Gitリポジトリの自動フェッチを有効化
+  "git.confirmSync": false, // Gitの同期操作時の確認ダイアログを表示しない
+  /* github copilot */
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.advanced": {
+    "enabled": true
+  },
+  "github.copilot.enable": {
+    "*": true, // すべての言語で有効化
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    // "javascript": false, // JavaScriptで無効化
+    // "typescript": false, // TypeScriptで無効化
+    // "python": false, // Pythonで無効化
+    // "html": false, // HTMLで無効化
+    // "css": false, // CSSで無効化
+  },
+  // ---------------
+  // エディタの基本設定
+  // ---------------
 }

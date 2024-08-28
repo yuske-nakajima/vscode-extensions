@@ -1,5 +1,3 @@
-brofox86.theme-espresso-soda-light // 配色テーマ Espresso Soda
-brofox86.theme-espresso-soda-solarized // 配色テーマ Solarized Espresso Soda
 donjayamanne.githistory // git履歴
 github.copilot
 github.copilot-chat

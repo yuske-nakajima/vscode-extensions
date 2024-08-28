@@ -33,11 +33,15 @@ sh install_extensions.sh <設定名>
 ```
 
 ## 各環境説明
+- 各環境の.vscode/settings.json は各環境での最低限のものを記述
+- 組み合わせて使う
 
 ### basic
-
 - 開発に必要な最低限の拡張
 
 ### web-basic
 - HTML・CSS・JS
 - フォーマッターをPrettier
+
+### web-deno
+- フォーマッターをdeno
