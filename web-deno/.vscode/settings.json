@@ -5,16 +5,16 @@
   "deno.config": "deno.jsonc", // Denoの設定ファイルを指定
   "editor.formatOnSave": true, // 保存時に自動フォーマットを有効化
   "[typescriptreact]": {
-      "editor.defaultFormatter": "denoland.vscode-deno" // TypeScript ReactファイルのデフォルトフォーマッタをDenoに設定
+    "editor.defaultFormatter": "denoland.vscode-deno" // TypeScript ReactファイルのデフォルトフォーマッタをDenoに設定
   },
   "[typescript]": {
-      "editor.defaultFormatter": "denoland.vscode-deno" // TypeScriptファイルのデフォルトフォーマッタをDenoに設定
+    "editor.defaultFormatter": "denoland.vscode-deno" // TypeScriptファイルのデフォルトフォーマッタをDenoに設定
   },
   "deno.enablePaths": [
-      "deno.jsonc" // deno.jsonc ファイルに対してのみDenoの機能（フォーマット）を有効化
+    "deno.jsonc" // deno.jsonc ファイルに対してのみDenoの機能（フォーマット）を有効化
   ],
   "deno.suggest.imports.hosts": {
-      "https://deno.land": false // Denoのimport suggestionsを無効化
+    "https://deno.land": false // Denoのimport suggestionsを無効化
   },
   "typescript.validate.enable": true, // VS CodeのデフォルトTypeScript検証を有効化
   "javascript.validate.enable": true, // VS CodeのデフォルトJavaScript検証を有効化
