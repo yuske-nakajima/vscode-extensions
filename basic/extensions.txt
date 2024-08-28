@@ -5,3 +5,4 @@ grapecity.gc-excelviewer // CSV・エクセルを見やすく
 ms-ceintl.vscode-language-pack-ja // 日本語パック
 oderwat.indent-rainbow // インデントを見やすく
 shardulm94.trailing-spaces // 不要なスペースを見やすく
+alefragnani.project-manager // プロジェクトマネージャー

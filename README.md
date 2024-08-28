@@ -25,11 +25,13 @@
 - .vscode/settings.json 内に拡張機能に必要な設定を記述
 
 ## 使い方
-
+- 一括アンイストール は ```-u```オプションをつける
 ```bash
+# 一括アンインストールする
+sh install_extensions.sh -u <設定名>
+
+# 一括アンインストールしない
 sh install_extensions.sh <設定名>
-# 例
-# sh install_extensions.sh basic
 ```
 
 ## 各環境説明

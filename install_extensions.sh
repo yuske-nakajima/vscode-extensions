@@ -4,10 +4,30 @@ set -e  # コマンドがエラーで終了した場合、即座にスクリプ�
 
 # 使用方法を表示する関数
 print_usage() {
-    echo "使用方法: $0 <ディレクトリ名>"
+    echo "使用方法: $0 [-u] <ディレクトリ名>"
+    echo "オプション:"
+    echo "  -u    既存の拡張機能をアンインストールする"
     echo "例: $0 basic"
-    echo "    $0 python"
+    echo "    $0 -u python"
 }
+
+# デフォルトでアンインストールしない
+UNINSTALL=false
+
+# オプション引数の処理
+while getopts ":u" opt; do
+  case ${opt} in
+    u )
+      UNINSTALL=true
+      ;;
+    \? )
+      echo "無効なオプション: $OPTARG" 1>&2
+      print_usage
+      exit 1
+      ;;
+  esac
+done
+shift $((OPTIND -1))
 
 # ディレクトリ名が提供されているか確認
 if [ $# -eq 0 ]; then
@@ -33,9 +53,11 @@ echo "$EXTENSIONS_FILE が見つかりました"
 echo "$EXTENSIONS_FILE の内容:"
 cat "$EXTENSIONS_FILE"
 
-# 現在インストールされている全ての拡張機能をアンインストール
-echo "現在インストールされている全ての拡張機能をアンインストールしています..."
-code --list-extensions | xargs -L 1 code --uninstall-extension
+# アンインストールオプションが指定されている場合のみアンインストールを実行
+if [ "$UNINSTALL" = true ]; then
+    echo "現在インストールされている全ての拡張機能をアンインストールしています..."
+    code --list-extensions | xargs -L 1 code --uninstall-extension
+fi
 
 # extensions.txtファイルから拡張機能を抽出
 EXTENSIONS=$(awk -F ' // ' '{print $1}' "$EXTENSIONS_FILE" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
@@ -58,11 +80,3 @@ do
 done
 
 echo "$DIR_NAME の拡張機能の処理が完了しました"
-
-# VS Code を再起動
-echo "VS Code を再起動しています..."
-pkill code  # VS Code プロセスを終了
-sleep 2  # プロセスが完全に終了するのを待つ
-code &  # VS Code を再起動（バックグラウンドで）
-
-echo "VS Code の再起動が完了しました。新しい拡張機能が利用可能になりました。"
