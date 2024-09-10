@@ -1,4 +1,3 @@
-donjayamanne.githistory // git履歴
 github.copilot
 github.copilot-chat
 grapecity.gc-excelviewer // CSV・エクセルを見やすく
