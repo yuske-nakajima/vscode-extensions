@@ -8,7 +8,7 @@
   "editor.insertSpaces": true, // タブの代わりにスペースを使用
   "editor.detectIndentation": false, // ファイルごとの自動インデント検出を無効化
   "files.eol": "\n", // 改行コードをLF（\n）に設
-  "workbench.editor.labelFormat": "medium", // タブに表示するファイル名のフォーマット
+  "workbench.editor.labelFormat": "short", // タブに表示するファイル名のフォーマット
   "workbench.tree.indent": 16, // エクスプローラーでのインデントのピクセル数
   "workbench.tree.renderIndentGuides": "always", // エクスプローラーでインデントガイドを表示
   "explorer.compactFolders": false, // 単一の子フォルダを親フォルダと統合して表示しない
@@ -25,6 +25,7 @@
   ], // 120文字目にルーラーを表示
   /* ワークスペース設定 */
   "workbench.editor.enablePreview": false, // プレビューモードを無効化
+  "workbench.activityBar.location": "top", // アクティビティバーを上部に表示
   "explorer.confirmDelete": false, // ファイル削除時の確認を無効化
   "editor.fontSize": 16, // エディタのフォントサイズを16に設定
   "editor.inlineSuggest.enabled": true, // インラインヒント（GitHub Copilotなど）を有効化
@@ -32,6 +33,10 @@
   "editor.unicodeHighlight.invisibleCharacters": false, // 不可視のUnicode文字のハイライトを無効化
   "diffEditor.ignoreTrimWhitespace": true, // 差分表示時に行末の空白の違いを無視
   "files.autoSave": "afterDelay", // ファイルを一定時間後に自動保存
+  /* ローカル履歴 */
+  "workbench.localHistory.enabled": true, // ローカル履歴の有効化
+  "workbench.localHistory.maxFileSize": 2048, // ローカル履歴の最大ファイルサイズ(KB)
+  "workbench.localHistory.maxFileEntries": 100, // ローカル履歴の最大エントリ数
   /* git */
   "git.autofetch": true, // Gitリポジトリの自動フェッチを有効化
   "git.confirmSync": false, // Gitの同期操作時の確認ダイアログを表示しない
